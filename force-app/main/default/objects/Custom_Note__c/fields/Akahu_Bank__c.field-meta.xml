@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Akahu_Bank__c</fullName>
+    <description>The Bank of the customer provided from akahu report</description>
+    <externalId>false</externalId>
+    <label>Bank</label>
+    <length>112</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

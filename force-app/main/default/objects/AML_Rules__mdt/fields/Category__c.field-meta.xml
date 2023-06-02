@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>Case category</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funds Inquiry</fullName>
+                <default>false</default>
+                <label>Funds Inquiry</label>
+            </value>
+            <value>
+                <fullName>Manual Validation of Bank Account</fullName>
+                <default>false</default>
+                <label>Manual Validation of Bank Account</label>
+            </value>
+            <value>
+                <fullName>Email Verification Code</fullName>
+                <default>false</default>
+                <label>Email Verification Code</label>
+            </value>
+            <value>
+                <fullName>Cloudcheck</fullName>
+                <default>false</default>
+                <label>Cloudcheck</label>
+            </value>
+            <value>
+                <fullName>AML Rule Breached at Registration</fullName>
+                <default>false</default>
+                <label>AML Rule Breached at Registration</label>
+            </value>
+            <value>
+                <fullName>AML Rule Breached at Deposit</fullName>
+                <default>false</default>
+                <label>AML Rule Breached at Deposit</label>
+            </value>
+            <value>
+                <fullName>Personal Followup on Customers That Have not Deposited Recently</fullName>
+                <default>false</default>
+                <label>Personal Followup on Customers That Have not Deposited Recently</label>
+            </value>
+            <value>
+                <fullName>Customer Feedback</fullName>
+                <default>false</default>
+                <label>Customer Feedback</label>
+            </value>
+            <value>
+                <fullName>Watch/Freeze Request of Customer Account</fullName>
+                <default>false</default>
+                <label>Watch/Freeze Request of Customer Account</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint - direct from customer</fullName>
+                <default>false</default>
+                <label>Customer Complaint - direct from customer</label>
+            </value>
+            <value>
+                <fullName>Customer Complaint - via FSCL (Forwarded by FSCL, Not a formal DRS request)</fullName>
+                <default>false</default>
+                <label>Customer Complaint - via FSCL (Forwarded by FSCL, Not a formal DRS request)</label>
+            </value>
+            <value>
+                <fullName>Request to Change Personally Identifiable Information</fullName>
+                <default>false</default>
+                <label>Request to Change Personally Identifiable Information</label>
+            </value>
+            <value>
+                <fullName>Technical Support</fullName>
+                <default>false</default>
+                <label>Technical Support</label>
+            </value>
+            <value>
+                <fullName>AML Rule Breached at Withdrawal</fullName>
+                <default>false</default>
+                <label>AML Rule Breached at Withdrawal</label>
+            </value>
+            <value>
+                <fullName>No match on app bank account name</fullName>
+                <default>false</default>
+                <label>No match on app bank account name</label>
+            </value>
+            <value>
+                <fullName>Change in Beneficial Owner</fullName>
+                <default>false</default>
+                <label>Change in Beneficial Owner</label>
+            </value>
+            <value>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+                <label>Transactions</label>
+            </value>
+            <value>
+                <fullName>General Support</fullName>
+                <default>false</default>
+                <label>General Support</label>
+            </value>
+            <value>
+                <fullName>Investment-related</fullName>
+                <default>false</default>
+                <label>Investment-related</label>
+            </value>
+            <value>
+                <fullName>Manual verification of bank statement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manual verification of bank statement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

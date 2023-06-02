@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_request_assignment</fullName>
+        <description>Approval request assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>jon.foster@tempo.co.nz</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Bank_change_Approval_Notification1</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Pause_Trading_Approved</fullName>
+        <description>Customer Pause Trading Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Assignment_and_Notification/Customer_Pause_Trading_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Pause_Trading_Rejected</fullName>
+        <description>Customer Pause Trading Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Assignment_and_Notification/Customer_Pause_Trading_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>approval_request_approved</fullName>
+        <description>approval request approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Bank_change_approved_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>approval_request_rejected</fullName>
+        <description>approval request rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Bank_change_rejection_notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Last_Submitter_Id</fullName>
+        <description>Save the Approval submitter id for the notifications to be send on final steps.</description>
+        <field>Approval_Last_Submitter_Id__c</field>
+        <formula>$User.Id</formula>
+        <name>Approval Last Submitter Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Bank_Account_Status</fullName>
+        <description>Changes the Bank Account Status to pass once the bank change request has been approved</description>
+        <field>Akahu_Status__c</field>
+        <literalValue>pass</literalValue>
+        <name>Bank Account Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Bank_account_status_update_fail</fullName>
+        <field>Akahu_Status__c</field>
+        <literalValue>fail</literalValue>
+        <name>Bank account status update fail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_approval_status_to_approved</fullName>
+        <description>Changes approval status to approved after the request has been approved</description>
+        <field>Bank_Change_Approval__c</field>
+        <literalValue>Approval Granted</literalValue>
+        <name>Change approval status to approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_approval_status_to_denied</fullName>
+        <description>Changes approval status to denied if the request has been rejected</description>
+        <field>Bank_Change_Approval__c</field>
+        <literalValue>Approval Denied</literalValue>
+        <name>Change approval status to denied</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_approval_status_to_requested</fullName>
+        <field>Bank_Change_Approval__c</field>
+        <literalValue>Approval Requested</literalValue>
+        <name>Change approval status to requested</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PDS_not_receieced</fullName>
+        <field>PDS_Received__c</field>
+        <literalValue>0</literalValue>
+        <name>PDS not receieced</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PDS_received</fullName>
+        <description>PDS received ticked if approved</description>
+        <field>PDS_Received__c</field>
+        <literalValue>1</literalValue>
+        <name>PDS received</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pause_Trading_Approval_Status_Pending</fullName>
+        <description>Update Approval Status to pending</description>
+        <field>Pause_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Pause Trading Approval Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pause_Trading_Approval_Status_Rejected</fullName>
+        <description>Update pause trading approval status to approved</description>
+        <field>Pause_Approval_Status__c</field>
+        <literalValue>Not Approved</literalValue>
+        <name>Pause Trading Approval Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pause_Trading_False</fullName>
+        <description>Update the field pause trading to false.</description>
+        <field>Paused_trading__c</field>
+        <literalValue>0</literalValue>
+        <name>Pause Trading False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pause_Trading_True</fullName>
+        <description>Update the Pause Trading field to true</description>
+        <field>Paused_trading__c</field>
+        <literalValue>1</literalValue>
+        <name>Pause Trading True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pause_trading_Approval_Status_to_Approv</fullName>
+        <field>Pause_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Pause Trading Approval Status to Approv</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Phoebe_status_verified</fullName>
+        <description>changes Phoebe status to verified</description>
+        <field>Phoebe_Status__c</field>
+        <formula>&quot;verified&quot;</formula>
+        <name>Phoebe status verified</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Submitter_ID</fullName>
+        <field>Submitter_ID__c</field>
+        <formula>$User.Id</formula>
+        <name>Set Submitter ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_registered</fullName>
+        <description>updates status to registered if approved</description>
+        <field>Status__c</field>
+        <literalValue>Registered</literalValue>
+        <name>Status update registered</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_Bank_Account_Status_to_pending</fullName>
+        <field>Akahu_Status__c</field>
+        <literalValue>pending</literalValue>
+        <name>update Bank Account Status to pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>verified</fullName>
+        <field>Phoebe_Status__c</field>
+        <formula>&quot;verified&quot;</formula>
+        <name>verified</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

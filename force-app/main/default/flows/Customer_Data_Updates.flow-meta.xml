@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>is_CS_Flag_Note_Empty</name>
+        <label>is CS_Flag_Note Empty</label>
+        <locationX>528</locationX>
+        <locationY>326</locationY>
+        <defaultConnector>
+            <targetReference>Update_CS_Flag_Note_not_empty</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CS_Flag_Note Not Empty</defaultConnectorLabel>
+        <rules>
+            <name>CS_Flag_Note_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CS_Flag_Notes__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_CS_Flag_Note</targetReference>
+            </connector>
+            <label>CS_Flag_Note Empty</label>
+        </rules>
+    </decisions>
+    <description>This flow updates the CS flag note field with the previous emails if the customer email is changed.</description>
+    <environments>Default</environments>
+    <interviewLabel>Customer Data Updates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Customer Data Updates</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_CS_Flag_Note</name>
+        <label>Update CS Flag Note</label>
+        <locationX>534</locationX>
+        <locationY>472</locationY>
+        <inputAssignments>
+            <field>CS_Flag_Notes__c</field>
+            <value>
+                <stringValue>{!$Record__Prior.PersonEmail}(old)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the CS flag note field with old value + email</description>
+        <name>Update_CS_Flag_Note_not_empty</name>
+        <label>Update CS Flag Note(not empty)</label>
+        <locationX>332</locationX>
+        <locationY>350</locationY>
+        <inputAssignments>
+            <field>CS_Flag_Notes__c</field>
+            <value>
+                <stringValue>{!$Record.CS_Flag_Notes__c}, {!$Record__Prior.PersonEmail}(old)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>410</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>is_CS_Flag_Note_Empty</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PersonEmail</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

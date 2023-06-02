@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<br>]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<table cellpadding="0" width="500" cellspacing="0" id="topTable" height="450"><tbody><tr valign="top"><td style="background-color: rgb(255, 255, 255); vertical-align: top; height: 0px;"><img border="0" beditid="r1sp1" blabel="headerImage" id="r1sp1" src="https://trovemoney--uat.sandbox.my.salesforce.com/servlet/servlet.ImageServer?id=0154a0000009pta&amp;oid=00D2v000003OONQ"></td></tr><tr valign="top"><td style="background-color: rgb(255, 255, 255); height: 0px;"></td></tr><tr valign="top"><td styleinsert="1" height="300" style="background-color: rgb(255, 255, 255); font-size: 12pt;"><table border="0" cellpadding="5" width="600" cellspacing="5" height="400"><tbody><tr valign="top" height="50"><td teditid="c1r1" aeditid="c1r1" locked="0" style="font-size: 12pt;">Kia Ora Customer Service representative</td></tr><tr valign="top" height="300"><td teditid="c1r2" aeditid="c1r2" locked="0" style="font-size: 12pt;">A case&nbsp;{!Case.Id} has opened up for you.<div>Case number:&nbsp;{!Case.CaseNumber}<br><div>Please see the case linked here:&nbsp;{!Case.Link}</div></div><div><br></div></td></tr></tbody></table></td></tr></tbody></table>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<span style="background-color: rgb(255, 255, 255);">Kind Regards,</span><div><span style="background-color: rgb(255, 255, 255);">The Team at Tempo</span><br><div><span style="background-color: rgb(255, 255, 255);"><img src="https://trovemoney--c.documentforce.com/servlet/servlet.ImageServer?id=0154a000000IUGf&amp;oid=00D2v000003OONQ" border="0" align="left" alt=""><br></span></div></div>]]></td>
+</tr>
+</table>

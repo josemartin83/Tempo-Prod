@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason__c</fullName>
+    <description>Case reason dependent on case sub-category.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Case Reason</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Address Failure</fullName>
+                <default>false</default>
+                <label>Address Failure</label>
+            </value>
+            <value>
+                <fullName>Date of Birth Failure</fullName>
+                <default>false</default>
+                <label>Date of Birth Failure</label>
+            </value>
+            <value>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+                <label>Deposit</label>
+            </value>
+            <value>
+                <fullName>Freeze</fullName>
+                <default>false</default>
+                <label>Freeze</label>
+            </value>
+            <value>
+                <fullName>FSCL Formal DRS Request (start of 10 working day time period to respond)</fullName>
+                <default>false</default>
+                <label>FSCL Formal DRS Request (start of 10 working day time period to respond)</label>
+            </value>
+            <value>
+                <fullName>Name, DoB and Address Failure</fullName>
+                <default>false</default>
+                <label>Name, DoB and Address Failure</label>
+            </value>
+            <value>
+                <fullName>Name and Address Failure</fullName>
+                <default>false</default>
+                <label>Name and Address Failure</label>
+            </value>
+            <value>
+                <fullName>Name Change - PEP Identified</fullName>
+                <default>false</default>
+                <label>Name Change - PEP Identified</label>
+            </value>
+            <value>
+                <fullName>Name Failure</fullName>
+                <default>false</default>
+                <label>Name Failure</label>
+            </value>
+            <value>
+                <fullName>No Driver’s License or Passport</fullName>
+                <default>false</default>
+                <label>No Driver’s License or Passport</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Registration</fullName>
+                <default>false</default>
+                <label>Registration</label>
+            </value>
+            <value>
+                <fullName>Verification of Change not Required</fullName>
+                <default>false</default>
+                <label>Verification of Change not Required</label>
+            </value>
+            <value>
+                <fullName>Verification of Change Required</fullName>
+                <default>false</default>
+                <label>Verification of Change Required</label>
+            </value>
+            <value>
+                <fullName>Watch</fullName>
+                <default>false</default>
+                <label>Watch</label>
+            </value>
+            <value>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+                <label>Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Address verification failure</fullName>
+                <default>false</default>
+                <label>Address verification failure</label>
+            </value>
+            <value>
+                <fullName>Identity Verification Failure (3 attempts)</fullName>
+                <default>false</default>
+                <label>Identity Verification Failure (3 attempts)</label>
+            </value>
+            <value>
+                <fullName>Address verification failure (This address is correct)</fullName>
+                <default>false</default>
+                <label>Address verification failure (This address is correct)</label>
+            </value>
+            <value>
+                <fullName>Address Verification Failure (3 attempts)</fullName>
+                <default>false</default>
+                <label>Address Verification Failure (3 attempts)</label>
+            </value>
+            <value>
+                <fullName>Auto Refund</fullName>
+                <default>false</default>
+                <label>Auto Refund</label>
+            </value>
+            <value>
+                <fullName>Account Closure</fullName>
+                <default>false</default>
+                <label>Account Closure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

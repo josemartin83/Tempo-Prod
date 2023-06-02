@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Pause_Trading_Approval</name>
+        <label>Pause Trading Approval</label>
+        <locationX>413</locationX>
+        <locationY>649</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <connector>
+            <targetReference>SureScreen</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>processDefinitionNameOrId</name>
+            <value>
+                <stringValue>Pause_Trading_Approval_Process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>comment</name>
+            <value>
+                <stringValue>{!Get_Account.Name} is requested to pause trading. Please review and approve. Thank you.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>submitterId</name>
+            <value>
+                <elementReference>Get_Account.LastModifiedBy.Name</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>Request for approval on unpause trading for a customer</description>
+        <name>Unpause_Trading_Approval_Process</name>
+        <label>Unpause Trading Approval Process</label>
+        <locationX>715</locationX>
+        <locationY>690</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <connector>
+            <targetReference>SureScreen</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>processDefinitionNameOrId</name>
+            <value>
+                <stringValue>Unpause_Approval_Process</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>comment</name>
+            <value>
+                <stringValue>{!Get_Account.Name} requested to resume trading. Please approve. Thank you.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>submitterId</name>
+            <value>
+                <elementReference>Get_Account.LastModifiedBy.Name</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Update_Account_Pause_Trading</name>
+        <label>Update Account Pause Trading</label>
+        <locationX>234</locationX>
+        <locationY>440</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Account.Paused_trading__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_customer_record</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>noIamNotSure</name>
+        <choiceText>No, I am not sure.</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>noIamNotSure</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>YesIamSure</name>
+        <choiceText>Yes, I am sure.</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>YesIamSure</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Check the customer pause trading status</description>
+        <name>Check_Customer_Status</name>
+        <label>Check Customer Trading Status</label>
+        <locationX>524</locationX>
+        <locationY>313</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Paused_Trading_Approval_Pending</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Pause_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Paused_trading__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Paused_Trading_Pending_Screen</targetReference>
+            </connector>
+            <label>Paused Trading Approval Pending</label>
+        </rules>
+        <rules>
+            <name>Unpaused_Trading_Approval_Pending</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Pause_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Paused_trading__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Unpause_Trading_Pending_Screen</targetReference>
+            </connector>
+            <label>Unpaused Trading Approval Pending</label>
+        </rules>
+        <rules>
+            <name>Paused_Trading</name>
+            <conditionLogic>(1 AND 2) OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Paused_trading__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Pause_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Locked__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Paused_Trading_Warning_Screen</targetReference>
+            </connector>
+            <label>Paused Trading</label>
+        </rules>
+        <rules>
+            <name>ActiveTrading</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Account.Paused_trading__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Pause_Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Account.Pause_Approval_Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Not Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Screen_1</targetReference>
+            </connector>
+            <label>Active Trading</label>
+        </rules>
+    </decisions>
+    <description>Pause Trading for an individual customer.</description>
+    <environments>Default</environments>
+    <interviewLabel>Customer Pause Trading {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Customer Pause Trading</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get the account which starts the flow</description>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>533</locationX>
+        <locationY>188</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Customer_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the customer record to unpause trading.</description>
+        <name>Unpause_Customer_Record</name>
+        <label>Unpause Customer Record</label>
+        <locationX>715</locationX>
+        <locationY>544</locationY>
+        <connector>
+            <targetReference>Unpause_Trading_Approval_Process</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Pause_Approval_Status__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Paused_trading__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_the_customer_record</name>
+        <label>Update the customer record</label>
+        <locationX>234</locationX>
+        <locationY>649</locationY>
+        <connector>
+            <targetReference>Pause_Trading_Approval</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Account.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Paused_trading__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <screens>
+        <name>Paused_Trading_Pending_Screen</name>
+        <label>Paused Trading Pending Screen</label>
+        <locationX>764</locationX>
+        <locationY>245</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Paused_Trading_Pending_Warning</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(221, 30, 30);&quot;&gt;{!Get_Account.Name} is already requested for &quot;Pause Trading&quot; and waiting for approval.&lt;/strong&gt;&lt;strong style=&quot;color: rgb(208, 30, 30);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Exit</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Paused_Trading_Warning_Screen</name>
+        <label>Paused Trading Warning Screen</label>
+        <locationX>715</locationX>
+        <locationY>384</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Unpause_Customer_Record</targetReference>
+        </connector>
+        <fields>
+            <name>Paused_Trading_Warning</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(228, 58, 58);&quot;&gt;{!Get_Account.Name} is in Paused Trading or Locked in Status. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(22, 146, 195);&quot;&gt;Are you Sure want to &quot;Unpause Trading&quot; for &lt;/strong&gt;&lt;strong style=&quot;color: rgb(22, 146, 195); background-color: rgb(255, 255, 255);&quot;&gt;{!Get_Account.Name}.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Unpause_Trading</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Unpause Trading</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;&lt;span style=&quot;color: rgb(228, 17, 17); background-color: rgb(255, 255, 255);&quot;&gt;Please confirm on this check box to continue to Unpause trading for {!Get_Account.Name}!&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!Unpause_Trading} = True</formulaExpression>
+            </validationRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_1</name>
+        <label>Screen 1</label>
+        <locationX>379</locationX>
+        <locationY>316</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Account_Pause_Trading</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Message</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(40, 161, 218); font-size: 16px;&quot;&gt;Are you Sure want to Pause this trading?&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Confirm_Pause_Trading</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Please Confirm to Pause Trading for this Customer</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;&lt;span style=&quot;color: rgb(228, 17, 17);&quot;&gt;Please confirm on this check box to continue to Pause trading for {!Get_Account.Name}!&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!Confirm_Pause_Trading} = True</formulaExpression>
+            </validationRule>
+        </fields>
+        <nextOrFinishButtonLabel>Continue to Pause</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>SureScreen</name>
+        <label>Sure Screen</label>
+        <locationX>542</locationX>
+        <locationY>649</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>SureText</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(28, 144, 35);&quot;&gt;Thank you for your confirmation. Submitted for Approval.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>This Screen shows when the approval status is in pending for unpaused trading approval.</description>
+        <name>Unpause_Trading_Pending_Screen</name>
+        <label>Unpause Trading Pending Screen</label>
+        <locationX>533</locationX>
+        <locationY>517</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Unpause_trading_pending_approval_text</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(221, 30, 30); background-color: rgb(255, 255, 255);&quot;&gt;{!Get_Account.Name} is already requested &quot;Unpause Trading&quot; and waiting for approval.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>410</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Account</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

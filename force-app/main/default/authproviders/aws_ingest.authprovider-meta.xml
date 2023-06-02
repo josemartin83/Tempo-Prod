@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://trovemoney-sf-bridge-prod.auth.ap-southeast-2.amazoncognito.com/oauth2/authorize</authorizeUrl>
+    <consumerKey>3go9t9cj057hosd26n79h61k3m</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>aws_ingest</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>OpenIdConnect</providerType>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://trovemoney-sf-bridge-prod.auth.ap-southeast-2.amazoncognito.com/oauth2/token</tokenUrl>
+    <userInfoUrl>https://trovemoney-sf-bridge-prod.auth.ap-southeast-2.amazoncognito.com/oauth2/userInfo</userInfoUrl>
+</AuthProvider>

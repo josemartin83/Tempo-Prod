@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+ <types>
+    <members>CS_Email_Templates/Customer_Verification_ID_and_Address</members>
+    <members>CS_Email_Templates/Non_Akahu_Bank_Account_Verification_Email</members>
+    <members>CS_Email_Templates/Confirming_a_first_deposit</members>
+    <members>CS_Email_Templates/Address_verification_email_template</members>
+    <members>CS_Email_Templates/company_or_trust_account_Auto_email</members>
+    <members>CS_Email_Templates/follow_up_email_template</members>
+    <members>CS_Email_Templates/PII_change_confirmation</members>
+    <members>CS_Email_Templates/Bank_account_verification_email_template</members>
+    <members>CS_Email_Templates/Verifying_name_ID_v2</members>
+    <name>EmailTemplate</name>
+  </types>
+ <version>53.0</version>
+ </Package>

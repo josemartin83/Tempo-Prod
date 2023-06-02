@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>09:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>09:00:00.000Z</mondayStartTime>
+        <name>Trove Business hours</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>09:00:00.000Z</thursdayStartTime>
+        <timeZoneId>Pacific/Auckland</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>09:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>09:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2023-04-25</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>ANZAC Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-26</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Anzac Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-04-25</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Anzac Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2020-12-28</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-12-26</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-12-26</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-28</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2020-12-25</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-12-25</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-27</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-12-27</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day Observed</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-01-04</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Day after New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-02</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Day after New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-01-04</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Day after New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-03</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Day off for New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-05</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-04-10</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-04-18</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2020-04-02</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-04-07</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-04-15</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-02</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-06-05</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>King&apos;s Birthday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2020-10-26</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-10-23</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-10-24</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-10-25</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-07-14</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Matariki</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-01-01</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-01-03</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-06-07</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Queen&apos;s Birthday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-06-06</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Queen&apos;s Birthday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-02-08</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Waitangi Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-02-06</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Waitangi Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-02-07</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Waitangi Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-01-25</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Wellington Anniversary Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-01-24</activityDate>
+        <businessHours>Trove Business hours</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Wellington Anniversary Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2023-01-23</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Wellington Anniversary Day</name>
+    </holidays>
+</BusinessHoursSettings>

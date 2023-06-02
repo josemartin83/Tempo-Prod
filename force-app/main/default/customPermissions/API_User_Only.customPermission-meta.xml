@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is only applicable for the API users to ensure that Salesforce doesn&apos;t communicate with AWS with there is a change from the pheobe side.</description>
+    <isLicensed>false</isLicensed>
+    <label>API User Only</label>
+</CustomPermission>

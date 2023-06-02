@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pack__c</fullName>
+    <description>The name of the pack chosen by the customer for this goal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The name of the pack chosen by the customer for this goal.</inlineHelpText>
+    <label>Pack</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

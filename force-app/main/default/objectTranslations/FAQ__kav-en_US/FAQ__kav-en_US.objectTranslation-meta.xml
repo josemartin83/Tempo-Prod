@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FAQ</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FAQs</value>
+    </caseValues>
+    <layouts>
+        <layout>FAQs (Guest User)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Question &amp; Answer</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FAQs Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Owner &amp; Publisher Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Question &amp; Answer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visibility</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Solution Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Owner &amp; Publisher Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Question &amp; Answer</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visibility</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>FAQs</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Solutions</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

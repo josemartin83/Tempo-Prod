@@ -1,0 +1,156 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Email Template</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style type="text/css">
+		/* Google font import Lato */
+		@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+		/* Outlook link fix */
+		#outlook a {
+			padding: 0;
+		}
+
+		/* Hotmail background & line height fixes */
+		.ExternalClass {
+			width: 100% !important;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass font,
+		/* Image borders & formatting */
+		img {
+			outline: none;
+			text-decoration: none;
+			-ms-interpolation-mode: bicubic;
+		}
+
+		a img {
+			border: none;
+		}
+
+		/* Re-style iPhone automatic links (eg. phone numbers) */
+		
+		.appleLinksGrey a {
+			color: #919191 !important;
+			text-decoration: none !important;
+		}
+
+		@media screen and (max-width:480px) {
+			.mobilefullwidth {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.p {
+				font-size: 16px !important;
+				line-height: 28px !important;
+				padding-left: 30px !important;
+				padding-right: 30px !important;
+				padding-bottom: 30px !important;
+			}
+
+			.footer {
+				padding-left: 30px !important;
+				padding-right: 30px !important;
+			}	
+		}
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body border="2"style="padding:0; margin:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; background-color:#e8e8e8; font-family: 'Lato', sans-serif; font-size:16px; line-height:24px; color:#919191">
+
+<!--[if mso]>
+	<style type="text/css">
+		body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+	</style>
+<![endif]-->
+
+
+<p style="color: #F5F8F9;font-size: 22;text-align: left;display: none;">&#128181;-Send a bank statement to release-</p>
+<p style="display: none; color: #F5F8F9; font-size: 22; text-align: left;"><p style="display: none; max-height: 0px; overflow: hidden;">
+ &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</p></p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+
+		<!-- // LEFT SPACER CELL -->
+		<td bgcolor="#FFFFFF" style="font-size:0px">&zwnj;</td>
+
+			<!-- // MAIN CONTENT CELL -->
+			<td align="center" bgcolor="#FFFFFF">
+
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>			
+
+						<!-- MAIN IMAGE -->
+				
+						<!-- PARAGRAPH -->
+						<tr>
+							<td class="p" align="left" bgcolor="#FFFFFF" style="padding-right: 15px; padding-left: 15px;font-size: 15;padding-bottom: 50px; line-height: 24px; font-weight: 400; text-align: left; color:black;">
+									<br>
+									<br>
+									Hi {!Contact.FirstName},
+									<br>
+									<br>
+									There was a mismatch between your bank account and the system verifying your bank account. This temporarily blocks us from being able to invest your recent deposit. 
+                                    <br>
+                                    <br>
+									To unblock your deposit and invest it, we need to manually verify your bank account. Please email us a recent <strong>bank statement of the account you deposited from</strong>.
+									<br>
+                                    <br>
+                                    This will only happen one time. All your future deposits will automatically invest once we've verified your bank name.
+                                    <br>
+                                    <br>
+                                    If you have any further questions, please email us.
+                                    <br>
+                                    <br>
+                                    Thank you
+<br>
+<strong>Tempo Customer Support</strong></p></left>
+							</td>
+						</tr>
+                        <p style="color: #F5F8F9;font-size: 22;text-align: left;display: none;"> {!Case.Thread_Id}</p>						
+						<!-- FOOTER -->
+                                                 						<tr>
+							<td class="footer" align="left" bgcolor="#FFFFFF" style="padding-top: 0px; padding-right: 50px; padding-bottom: 15px; padding-left: 0px;">
+								<table border = "0">
+									<tbody>
+								    	<tr>
+										    <td style="vertical-align: bottom; max-height: 90px; max-width: 90px; padding-top: 0px;">
+		            							<img src="https://lh3.googleusercontent.com/90z14_4MTwnIfWDj-gdmh97BC6k4uYKzpYZlCVbVlSn-G2mEGGA0_fQLnJ9FCT89xO4wPeze-tp2lBH9GXdDYMtUJnkN40cvW9Cqhyih494EF3vwu7miR4dobIFIUrFLkfpVxIhvx275vXGn-QF8XLWqP1E3pQzwvOIAIWzMh5xVrNKMSCr2iOeb5fvN4JIr9J1HvRC8PepBywioz3BYPyAwMjtcznbU7h2R76SCZOhCWAb1RhvKEj0pn8cNZ7cK4Od73eLED0LFr4svJkoh8Dn9gl3Tve_DRDuF6bxJzH0WnjkWv9SToUObHC5gSgQ00AylKMGv6sCGigKbT65PpuenRm1ZXE2rIHCgb-eeDZmWYhm00_gvD3UOE9gdr4TY6asmd0DUyPUs7nA530cEThOeN7r9d2uKsfaVTITKPlQjbiE19XaKhF01uO8EuSjzrp7xbkK16hXhf8BC6g2h6PPyvOpod6vAWEKbxvGoNVt1sQ3dGhqAehEFdI-D92gGs1hXMs1LMkT-tiK3czuk81x__u65cfDSrx7JcqmcY_zdghkTsDG1IkDfCR1kcffHBSmLjb4Pn0uos9WdZFu33JLgjq8TPuAJVQsgrymoSkBU2Wbg6ShHotaassYG5aWyN7MTNy82sWXncpu5GuAFk0tKDQc70IrZSNu1SlDYOSaHyI2DBKE34yGOLnEfOdmd0A-UDcEkh-vYism-DA1K04auDtR66m5BpondHkcYtp9Boeq_FJj0anGaezYIeb7t62X7rytz0XKrcouCu6OBZ1ys3T2f3HvnwiSNtOEIZ5sADvfBGnOPQE8k94oXaykguwjQibWlKHMdKhHELbUBpz3StP5IUdWNZ17kkwxfy0_1rkzz4zseG17o5OgLDiL4EYnPL7fJHj4Q0lLiLerI1qNeXP7wsB7PGFPDQBI=s200-no?authuser=0"  width="90" height="90" border="0" style="padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 0px; display: inline-block; max-width: 90px;" class="Footer_icon">
+											</td>
+										    <td>
+											    <table height="100%" style="padding-top: 50px; padding-bottom: 0px; padding-left: 0px; display: inline-block;" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
+													<td>                                                     
+														<left><p align ="bottom" style="color: #000000; font-size: 15px; line-height:0auto; margin-bottom: 1px;">
+													</td>											       
+										       </table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+			
+						<!--FOOTER-->				
+					</tbody>
+				</table>
+			</td>
+		<!-- // LEFT SPACER CELL -->
+		<td bgcolor="#FFFFFF" style="font-size:0px">&zwnj;</td>
+	</tr>
+</table>
+</body>
+</html>

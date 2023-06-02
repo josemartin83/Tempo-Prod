@@ -1,0 +1,167 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Email Template</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<style type="text/css">
+		/* Google font import Lato */
+		@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+		/* Outlook link fix */
+		#outlook a {
+			padding: 0;
+		}
+
+		/* Hotmail background & line height fixes */
+		.ExternalClass {
+			width: 100% !important;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass font,
+		/* Image borders & formatting */
+		img {
+			outline: none;
+			text-decoration: none;
+			-ms-interpolation-mode: bicubic;
+		}
+
+		a img {
+			border: none;
+		}
+
+		/* Re-style iPhone automatic links (eg. phone numbers) */
+		
+		.appleLinksGrey a {
+			color: #919191 !important;
+			text-decoration: none !important;
+		}
+
+		@media screen and (max-width:480px) {
+			.mobilefullwidth {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.p {
+				font-size: 16px !important;
+				line-height: 28px !important;
+				padding-left: 30px !important;
+				padding-right: 30px !important;
+				padding-bottom: 30px !important;
+			}
+
+			.footer {
+				padding-left: 30px !important;
+				padding-right: 30px !important;
+			}	
+		}
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body border="2"style="padding:0; margin:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:100%; background-color:#e8e8e8; font-family: 'Lato', sans-serif; font-size:16px; line-height:24px; color:#919191">
+
+<!--[if mso]>
+	<style type="text/css">
+		body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+	</style>
+<![endif]-->
+
+
+<p style="color: #F5F8F9;font-size: 22;text-align: left;display: none;"></p>
+<p style="display: none; color: #F5F8F9; font-size: 22; text-align: left;"><p style="display: none; max-height: 0px; overflow: hidden;">
+ &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</p></p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+
+		<!-- // LEFT SPACER CELL -->
+		<td bgcolor="#FFFFFF" style="font-size:0px">&zwnj;</td>
+
+			<!-- // MAIN CONTENT CELL -->
+			<td align="center" bgcolor="#FFFFFF">
+
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tbody>			
+
+						<!-- MAIN IMAGE -->
+						
+						<!-- PARAGRAPH -->
+						<tr>
+							<td class="p" align="left" bgcolor="#FFFFFF" style="padding-right: 15px; padding-left: 15px;font-size: 15;padding-bottom: 50px; line-height: 24px; font-weight: 400; text-align: left; color:black;">
+									<br>
+									<br>
+									Hi {!Contact.FirstName}
+									<br>
+									<br>
+									We weren't able to check your address through the app and need a little more info to do this.
+                                    <br>
+                                    <br>
+									Could you please email a copy of one of these documents:
+									<br>
+                                    &#8192;&#8226;&#8192; A recent bank statement
+									<br>
+									&#8192;&#8226;&#8192; Utility bill like power, gas, or insurance
+                                    <br>
+                                    &#8192;&#8226;&#8192; Local council letter
+                                    <br>
+                                    &#8192;&#8226;&#8192; Rental agreement or tenancy letter
+                                    <br>
+                                    &#8192;&#8226;&#8192; A letter from a government department like IRD or ACC.
+                                    <br>
+                                    <br>
+                                    We only need one of these documents to check your address.
+                                    <br>
+                                    <br>
+                                    Please email us if you have any further questions and we'll help you get started with Tempo.
+                                    <br>
+                                    <br>
+                                    Thank you
+<br>
+														<strong>Tempo Customer Support</strong></p></left>
+							</td>
+						</tr>	
+<p style="color: #F5F8F9;font-size: 22;text-align: left;display: none;"> {!Case.Thread_Id}</p>					
+						<!-- FOOTER -->
+	                                                 						<tr>
+							<td class="footer" align="left" bgcolor="#FFFFFF" style="padding-top: 0px; padding-right: 50px; padding-bottom: 15px; padding-left: 0px;">
+								<table border = "0">
+									<tbody>
+								    	<tr>
+										    <td style="vertical-align: bottom; max-height: 90px; max-width: 90px; padding-top: 0px;">
+		            							<img src="https://trovemoney--uat.sandbox.file.force.com/servlet/servlet.ImageServer?id=0154a000000IUGf&oid=00D8r000000ESin"   width="90" height="90" border="0" style="padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 0px; display: inline-block; max-width: 90px;" class="Footer_icon">
+											</td>
+										    <td>
+											    <table height="100%" style="padding-top: 50px; padding-bottom: 0px; padding-left: 0px; display: inline-block;" border="0" cellspacing="0" cellpadding="0" role="presentation"> 
+													<td>                                                     
+														<left><p align ="bottom" style="color: #000000; font-size: 15px; line-height:0auto; margin-bottom: 1px;">
+														
+													</td>											       
+										       </table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+			
+						<!--FOOTER-->				
+					</tbody>
+				</table>
+			</td>
+		<!-- // LEFT SPACER CELL -->
+		<td bgcolor="#FFFFFF" style="font-size:0px">&zwnj;</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Deposit_Received__c</fullName>
+    <description>The Deposit Amount Received as Initial Deposit on a Goal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Initial Deposit Amount Received as Initial Deposit on a Goal.</inlineHelpText>
+    <label>Initial Deposit Received</label>
+    <precision>15</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

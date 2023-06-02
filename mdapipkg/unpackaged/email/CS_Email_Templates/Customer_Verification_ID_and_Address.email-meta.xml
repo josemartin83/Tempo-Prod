@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>To be used by CS when customer fails cloudcheck and id and address needs to be verified manually.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Verify ID and address</name>
+    <style>none</style>
+    <subject>More info needed to check your identity</subject>
+    <textOnly>Email Template
+
+
+
+‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌   ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+
+
+‌
+
+
+
+Hi {!Contact.FirstName}
+
+We need a little more to be able to ID you. Email us another type of ID and we can get you up and running with Tempo  within a day or two.
+
+Email us:
+1. Certified copies of another type (or types) of current ID and
+2. Proof of your current address.
+
+1. Email a certified copy of your ID
+Select from the following ID options:
+
+One of any of these:
+ •  NZ passport
+ •  NZ certificate of identity
+ •  NZ refugee travel document
+ •  NZ firearms licence
+ •  Overseas passport
+ •  A national identity card
+
+OR
+
+Two types of ID
+ •  Your NZ driver licence
+AND one of any of these:
+ •  A bank account or credit card statement (within last 12 months)
+ •  A letter from a government agency that contains your name
+
+OR
+
+Two types of ID
+One of any of these:
+ •   NZ birth certificate
+ •   Certificate of NZ citizenship
+ •   Citizenship certificate issued by a foreign government
+ •   A birth certificate issued by a foreign United Nations government
+AND one of any of these:
+ •   Kiwiaccess (18+ card)
+ •   NZ driver licence
+ •   Valid and current international driver licence.
+
+ID can be certified by a lawyer, teacher, kaumatua, doctor, accountant, Justice of the Peace, court official, or police officer.
+
+2. Email us proof of your current address:
+This doesn&apos;t need to be certified.
+Select one of any of these:
+ •   A recent bank statement
+ •   Power, gas, or insurance bill
+ •   Local council letter
+ •   Rental agreement or tenancy letter
+ •   Letter from a government department.
+
+Please email us if you have any further questions, we&apos;ll help you get started with Tempo.
+
+Thank you
+Tempo Customer Support
+
+{!Case.Thread_Id}
+
+
+‌</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

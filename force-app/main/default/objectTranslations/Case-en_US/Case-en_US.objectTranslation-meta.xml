@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Adviser Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Adviser Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Feed Layout</layout>
+        <layoutType>CaseInteraction</layoutType>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community User Page</layout>
+        <sections>
+            <label></label>
+            <section>Customer Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Complaint Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Description and Outcome</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Complaint Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Compliance Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Description and Outcome</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Description and Outcome</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Feedback</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Support Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Close_Case</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

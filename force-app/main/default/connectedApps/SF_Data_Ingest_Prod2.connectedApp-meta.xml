@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>otto.jongerius@trovemoney.co.nz</contactEmail>
+    <description>Connected app to use data ingestion from AWS to Salesforce.</description>
+    <label>SF Data Ingest Prod</label>
+    <oauthConfig>
+        <callbackUrl>https://trovemoney.my.salesforce.com/services/oauth2/success</callbackUrl>
+        <certificate>MIIDVjCCAj4CCQD6xo6nzl2HeTANBgkqhkiG9w0BAQsFADBtMQswCQYDVQQGEwJOWjETMBEGA1UECAwKV2VsbGluZ3RvbjETMBEGA1UEBwwKV2VsbGluZ3RvbjEOMAwGA1UECgwFVHJvdmUxJDAiBgNVBAMMG3NmLWJyaWRnZS5hcGkudHJvdmVhcHAua2l3aTAeFw0yMTA3MTgyMjI0NTJaFw0yMjA3MTgyMjI0NTJaMG0xCzAJBgNVBAYTAk5aMRMwEQYDVQQIDApXZWxsaW5ndG9uMRMwEQYDVQQHDApXZWxsaW5ndG9uMQ4wDAYDVQQKDAVUcm92ZTEkMCIGA1UEAwwbc2YtYnJpZGdlLmFwaS50cm92ZWFwcC5raXdpMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArGYqTXBdJlSfxUa8jBaZORthMJu5IXbgADVre6SJgefr9q+cT0Ea0fYMcxCEgPA/tm4WSpL2QNNi9IcBGgipVhEuHMCWL0VmdEaCbXvWQ/zKD64tvFe8sqkYbrIn+K1J2RYUtstpmgHWNAGAPrubeC1MWxM9wUB8m8IaonYYx7Zf1ZEUM+bZ3OjO8jQHazZXb38IxvMFxSr62+8Zwe8sARo+qOZ9l2pdFA+IH0ppfrp8I17QD8Ztg/I48wMeZzX25/1df+5hhtBKiF9nVRwFjjP6gQrvgQbiMIJSMvdu6sS9aNflLLDuoHxfmTRRFJcIMlYqJCea1l+fBLjJkMlAPQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBjpK1BxwEhCtnRWhTUOsvt+vgfEvJm4EBYDPTHsqQtkPp9frphfJboR96CtdvCo6odoGknpj5WoJ4mRru1xwdcCU7HniyTKyQI8Spz0xy+Lkq3zcI/oZL5V8O7hREfq4tki0fP/skCxZbGquMdIe4ZorMSPjD2muvDQg02v8eYj2xkkOM2YM4Cdm9T7evxVjeItmOQpB4jWDVkdGpgzFHfvag9CeLINItyt/Hwr/qyNEAgeXKKQbC+/RnGHBbvf/S15Pvh7aNUhSrxwWfKer18vAvY/o1lWGmZ8U5Igr9dRaor7hF5M5L+4LadYBZbxHgN0PHE5crHR9AN6vty4fe1</certificate>
+        <consumerKey>3MVG9G9pzCUSkzZst8k0Nts9v35h2eUnr6469X8OgwFHt7yzJpAsKvqc4IndHjsgZWcRsd3DfdxtaqbBiYjy5</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>API User</profileName>
+</ConnectedApp>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>AML Rule Breached</label>
+                <name>AML_Rule_Breached</name>
+            </dataCategory>
+            <dataCategory>
+                <label>AML Rule Breached at Deposit</label>
+                <name>AML_Rule_Breached_at_Deposit</name>
+            </dataCategory>
+            <dataCategory>
+                <label>AML Rule Breached at Registratio</label>
+                <name>AML_Rule_Breached_at_Registratio</name>
+            </dataCategory>
+            <dataCategory>
+                <label>AML Rule Breached at Withdrawal</label>
+                <name>AML_Rule_Breached_at_Withdrawal</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Cloudcheck</label>
+                <name>Cloudcheck</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Manual Validation of Bank Account</label>
+                <name>Manual_Validation_of_Bank_Account</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Request to Change Personally Identifiabl</label>
+                <name>Request_to_Change_Personally_Identifiabl</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Watch/Freeze Request of Customer Account</label>
+                <name>Watch_Freeze_Request_of_Customer_Account</name>
+            </dataCategory>
+            <dataCategory>
+                <label>No match on app bank account name</label>
+                <name>No_match_on_app_bank_account_name</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Change in Beneficial Owner</label>
+                <name>Change_in_Beneficial_Owner</name>
+            </dataCategory>
+            <label>Compliance</label>
+            <name>Compliance</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Customer Complaint - direct from custome</label>
+                <name>Customer_Complaint_direct_from_custome</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Customer Complaint - FSCL referral</label>
+                <name>Customer_Complaint_FSCL_referral</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Customer Complaint - via FSCL</label>
+                <name>Customer_Complaint_via_FSCL</name>
+            </dataCategory>
+            <label>Complaints</label>
+            <name>Complaints</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Customer Feedback</label>
+                <name>Customer_Feedback</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Email Verification Code</label>
+                <name>Email_Verification_Code</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Funds Inquiry</label>
+                <name>Funds_Inquiry</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Personal Followup on Customers That Have</label>
+                <name>Personal_Followup_on_Customers_That_Have</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Technical Support</label>
+                <name>Technical_Support</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Transactions</label>
+                <name>Transactions</name>
+            </dataCategory>
+            <dataCategory>
+                <label>General Support</label>
+                <name>General_Support</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Investment-related</label>
+                <name>Investment_related</name>
+            </dataCategory>
+            <label>Support</label>
+            <name>Support</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Case</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

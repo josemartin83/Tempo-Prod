@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>CST 0022</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Non-Akahu Bank Account Verification Email</name>
+    <style>none</style>
+    <subject>Verify your bank account</subject>
+    <textOnly>Tempo
+
+{!Case.Thread_Id}‌
+
+
+Hi {!Contact.FirstName},
+
+Looks like you’ve opted to verify your bank account directly with us. This is an easy process that will get your Tempo account up and running within a day or two.
+
+Here is what we need to manually verify your bank account:
+
+Email us a copy of a recent bank statement.
+This needs to show your first name, last name (as they appear on your ID), current address, and bank account number.
+
+From the same account, make a $1 deposit.
+Using the details below. This is a one time verification that is automatically refunded back to you.
+
+Follow these steps to make a $1 deposit:
+
+1.
+Go to your online bank
+2.
+Select to make a payment
+3.
+
+Copy and paste Tempo&apos;s bank account number:
+
+01-1839-0938488-00
+(Remember to save Tempo as a payee)
+
+4.
+
+Enter the amount as $1
+
+5.
+Enter your payment details:
+Particulars: {!Contact.LastName}
+Reference:  {CS Reference}
+
+{!Case.Thread_Id}‌
+
+Bank verification is a necessary process to ensure your details are correct. It’s worth knowing that we’ll only keep a record of the info we need to verify your bank account.
+
+Please let us know if you have any further questions and we&apos;ll help you get started with Tempo!
+
+Thank you,
+{!User.FirstName}
+
+Tempo Customer Support
+
+Connect with us
+© Copyright 2022 Tempo  NZ Limited
+
+Tempo Funds are issued by Forsyth Barr Investment Management Limited. This message may contain information that is confidential. If you’re not the intended recipient please delete this email and contact us on help@trovemoney.co.nz</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

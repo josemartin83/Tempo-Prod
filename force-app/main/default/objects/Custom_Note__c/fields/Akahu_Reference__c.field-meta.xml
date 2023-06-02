@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Akahu_Reference__c</fullName>
+    <description>The reference related tot he Akahu check</description>
+    <externalId>false</externalId>
+    <label>Akahu Reference</label>
+    <length>112</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

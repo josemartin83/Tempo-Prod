@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Deposit__c</fullName>
+    <description>The Initial Deposit Amount Selected in App Signup.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Initial Deposit Amount that is entered while signing up on the app.</inlineHelpText>
+    <label>Initial Deposit</label>
+    <precision>15</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

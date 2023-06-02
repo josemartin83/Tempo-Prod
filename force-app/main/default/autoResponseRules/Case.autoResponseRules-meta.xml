@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case Auto-Response Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>help@trovemoney.co.nz</replyToEmail>
+            <senderEmail>support@trovemoney.co.nz</senderEmail>
+            <senderName>Customer Support</senderName>
+            <template>Assignment_and_Notification/Case_auto_response_email_template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>help@trovemoney.co.nz</replyToEmail>
+            <senderEmail>support@trovemoney.co.nz</senderEmail>
+            <senderName>Customer Support</senderName>
+            <template>Assignment_and_Notification/Case_auto_response_email_template</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

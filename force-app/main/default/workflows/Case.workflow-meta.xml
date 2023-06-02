@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Auto_Refund_deposit_as_No_Goal</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Auto Refund deposit as No-Goal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CST_folder/CST_email_0019_auto_refund_because_no_goal</template>
+    </alerts>
+    <alerts>
+        <fullName>Auto_response_for_AML_Rule</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Auto-response for AML Rule</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Returning_a_deposit</template>
+    </alerts>
+    <alerts>
+        <fullName>Bank_statement_auto_email</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Bank statement auto email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Bank_Statement_Auto_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Company_or_trust_account_email_alert</fullName>
+        <description>Company or trust account email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Customer_Service</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer_Service</recipient>
+            <type>roleSubordinates</type>
+        </recipients>
+        <recipients>
+            <recipient>CS_Manager</recipient>
+            <type>roleSubordinatesInternal</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer_Service</recipient>
+            <type>roleSubordinatesInternal</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CS_Email_Templates/company_or_trust_account_Auto_email</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Verification_Name_and_address</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Customer Verification: Name and address</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>New_CS_email_templates/CS_email_0001_Verify_ID_and_address_no_passport_or_driver_licence</template>
+    </alerts>
+    <alerts>
+        <fullName>Deposit_to_withdrawal_account_Alert</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Send an email to the customer when case is created for they have deposited money to withdrawal account.</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CST_folder/CST_email_0020_auto_refund_from_Adminis_withdrawal_account</template>
+    </alerts>
+    <alerts>
+        <fullName>FB_Compliance_Email_Alerts</fullName>
+        <description>FB Compliance Email Alerts</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FB Compliance</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Case_Assignment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>First_Response_Violation</fullName>
+        <description>First Response Violation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Milestone_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Milestone_violation_confirmation_email_for_CS_manager</fullName>
+        <description>Milestone violation confirmation email for customer service manager.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Milestone_Violation_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>Queue_email_alert</fullName>
+        <description>Queue email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Case_Assignment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Resolution_Time_Violation</fullName>
+        <description>Resolution Time Violation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Milestone_Notification_Resolution</template>
+    </alerts>
+    <alerts>
+        <fullName>Third_Milestone_Violation_Alert</fullName>
+        <description>Third Milestone Violation Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>support@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Assignment_and_Notification/Milestone_Notification_Resolution_Second_Level</template>
+    </alerts>
+    <alerts>
+        <fullName>Verify_Address</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Verify Address</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>New_CS_email_templates/CS_email_0004_Verify_Address</template>
+    </alerts>
+    <alerts>
+        <fullName>Verify_ID_and_Address</fullName>
+        <ccEmails>help@trovemoney.co.nz</ccEmails>
+        <description>Verify ID and Address</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>help@tempo.co.nz</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>New_CS_email_templates/CS_email_0002_Verify_ID_and_address</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Case_Escalated</fullName>
+        <description>If milestone violence  accurse, field status will be escalated.</description>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>Case Escalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Milestone_Violation</fullName>
+        <description>Update &quot; case milestone violation accurse field.</description>
+        <field>Case_Milestone_Violation_Occurrence__c</field>
+        <literalValue>1</literalValue>
+        <name>Case Milestone Violation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Escalated</fullName>
+        <field>IsEscalated</field>
+        <literalValue>1</literalValue>
+        <name>Escalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>First_Response_Completed</fullName>
+        <field>Level_1_First_Response_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>First Response Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>High_Case_First_Response</fullName>
+        <field>Level_1_First_Response_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>High Case First Response</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Medium_First_Response</fullName>
+        <description>Medium First Response.</description>
+        <field>Level_1_First_Response_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>Medium First Response</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Completed</fullName>
+        <description>Resolution completed field update when resolution time milestone completed.</description>
+        <field>Resolution_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reupdate_Stopped</fullName>
+        <description>Stopped field will be unchecked.</description>
+        <field>IsStopped</field>
+        <literalValue>0</literalValue>
+        <name>Reupdate Stopped</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Third_Milestone_Completed</fullName>
+        <description>Update field on milestone completion.</description>
+        <field>Second_Level_Resolution_Time_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>Second Milestone Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Milestone_Vaiolation</fullName>
+        <description>Uncheck level first milestone violation occurrence when the milestone is completed after violated.</description>
+        <field>Case_Milestone_Violation_Occurrence__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Milestone Vaiolation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stopped</fullName>
+        <description>Stopped standard field will be updated.</description>
+        <field>IsStopped</field>
+        <literalValue>1</literalValue>
+        <name>Update Stopped</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_resolution_Completed</fullName>
+        <description>Update the field resolution completed field.</description>
+        <field>Resolution_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Resolution Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Urgent_L1</fullName>
+        <field>Level_1_First_Response_Completed__c</field>
+        <literalValue>1</literalValue>
+        <name>Urgent L1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Escalated Case</fullName>
+        <actions>
+            <name>Escalated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <description>Auto populate Escalated field checkbox when case status is changed to escalated.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Release Milestone Time</fullName>
+        <actions>
+            <name>Reupdate_Stopped</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Uncheck the stopped field after case status is changed from &apos;on hold&apos;.</description>
+        <formula>AND (    ISCHANGED( Status ),   TEXT( PRIORVALUE( Status ))=&quot;On Hold&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Stope Milestone Time</fullName>
+        <actions>
+            <name>Update_Stopped</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>On Hold</value>
+        </criteriaItems>
+        <description>Trigger the field update that check the stopped field.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

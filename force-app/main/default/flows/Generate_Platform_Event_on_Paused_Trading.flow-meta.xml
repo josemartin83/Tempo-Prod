@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>This is to Notify the Submitter of approval on its final stages about the status.</description>
+        <name>Approval_Submitter_Notification</name>
+        <label>Approval Submitter Notification</label>
+        <locationX>776</locationX>
+        <locationY>742</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Approval_Approved_Chatter_Post</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify submitter for rejection</description>
+        <name>Rejected</name>
+        <label>Rejected</label>
+        <locationX>984</locationX>
+        <locationY>394</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Approval_Rejected_Chatter_Post</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <description>Check the value of the status and act accordingly.</description>
+        <name>Approval_Status</name>
+        <label>Approval Status</label>
+        <locationX>767</locationX>
+        <locationY>391</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pause_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Generate_Pause_Trading_Platform_Event</targetReference>
+            </connector>
+            <label>Approved</label>
+        </rules>
+        <rules>
+            <name>Approval_Rejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Pause_Approval_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Rejected</targetReference>
+            </connector>
+            <label>Rejected</label>
+        </rules>
+    </decisions>
+    <description>Flow to generate the platform event on paused trading approved.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Timestamp</name>
+        <dataType>String</dataType>
+        <expression>TEXT(NOW())</expression>
+    </formulas>
+    <formulas>
+        <name>Tstamp</name>
+        <dataType>String</dataType>
+        <expression>TEXT(NOW())</expression>
+    </formulas>
+    <interviewLabel>Generate Platform event on pause trading {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Generate Platform Event on Paused Trading</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Generate a platform event to send the data to AWS on approval of paused trading for an individual customer</description>
+        <name>Generate_Pause_Trading_Platform_Event</name>
+        <label>Generate Pause Trading Platform Event</label>
+        <locationX>776</locationX>
+        <locationY>610</locationY>
+        <connector>
+            <targetReference>Approval_Submitter_Notification</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Customer_ID__c</field>
+            <value>
+                <elementReference>$Record.Customer_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pause_Trading__c</field>
+            <value>
+                <elementReference>$Record.Paused_trading__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>Tstamp</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Person_Detail_Change__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>649</locationX>
+        <locationY>72</locationY>
+        <connector>
+            <targetReference>Approval_Status</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Pause_Approval_Status__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>This post on the chatter on an approval is approved</description>
+        <name>Approval_Approved_Chatter_Post</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;@[{!$Record.Approval_Last_Submitter_Id__c}] Your Approval request is &quot;Approved&quot;. Please check the notes for final process.&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Text to notify the submitter on rejection</description>
+        <name>Approval_Rejected_Chatter_Post</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;@[{!$Record.Approval_Last_Submitter_Id__c}] Your Approval request is &quot;Rejected&quot;. Please check the notes for final process.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

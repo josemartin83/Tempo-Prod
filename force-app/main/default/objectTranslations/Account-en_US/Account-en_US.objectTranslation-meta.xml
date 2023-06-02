@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <layouts>
+        <layout>Beneficiary Page Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Highlights</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Id Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Primary Bank Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Potential</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registered Page Layout</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Highlights</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Id Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Primary Bank Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Pause_Trading</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Unpause_Trading</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

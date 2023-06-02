@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <description>Sub Category of the case.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sub Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>$100k or more deposit</fullName>
+                <default>false</default>
+                <label>$100k or more deposit</label>
+            </value>
+            <value>
+                <fullName>$2k or more deposit per week over 8-weeks</fullName>
+                <default>false</default>
+                <label>$2k or more deposit per week over 8-weeks</label>
+            </value>
+            <value>
+                <fullName>2 or more weekly withdrawals totalling $1k or more/4 weeks</fullName>
+                <default>false</default>
+                <label>2 or more weekly withdrawals totalling $1k or more/4 weeks</label>
+            </value>
+            <value>
+                <fullName>2 or more withdrawals of $10k or more/4 weeks</fullName>
+                <default>false</default>
+                <label>2 or more withdrawals of $10k or more/4 weeks</label>
+            </value>
+            <value>
+                <fullName>5 deposits or more/4 weeks totalling $1k or more</fullName>
+                <default>false</default>
+                <label>5 deposits or more/4 weeks totalling $1k or more</label>
+            </value>
+            <value>
+                <fullName>Account could not be automatically validated</fullName>
+                <default>false</default>
+                <label>Account could not be automatically validated</label>
+            </value>
+            <value>
+                <fullName>App Error - customer cannot use it</fullName>
+                <default>true</default>
+                <label>App Error - customer cannot use it</label>
+            </value>
+            <value>
+                <fullName>App Error - customer cannot use some functions</fullName>
+                <default>false</default>
+                <label>App Error - customer cannot use some functions</label>
+            </value>
+            <value>
+                <fullName>App Functionality</fullName>
+                <default>false</default>
+                <label>App Functionality</label>
+            </value>
+            <value>
+                <fullName>App Password Issue</fullName>
+                <default>false</default>
+                <label>App Password Issue</label>
+            </value>
+            <value>
+                <fullName>App Usability</fullName>
+                <default>false</default>
+                <label>App Usability</label>
+            </value>
+            <value>
+                <fullName>Bank Account Number</fullName>
+                <default>false</default>
+                <label>Bank Account Number</label>
+            </value>
+            <value>
+                <fullName>Cel Number</fullName>
+                <default>false</default>
+                <label>Cel Number</label>
+            </value>
+            <value>
+                <fullName>Deposit - from non-registered bank account or incorrect Wallet reference number used, funds returned</fullName>
+                <default>false</default>
+                <label>Deposit - from non-registered bank account or incorrect Wallet reference number used, funds returned</label>
+            </value>
+            <value>
+                <fullName>Deposit over 9999.99</fullName>
+                <default>false</default>
+                <label>Deposit over 9999.99</label>
+            </value>
+            <value>
+                <fullName>Deposits</fullName>
+                <default>false</default>
+                <label>Deposits</label>
+            </value>
+            <value>
+                <fullName>Email Address</fullName>
+                <default>false</default>
+                <label>Email Address</label>
+            </value>
+            <value>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+                <label>Feature Request</label>
+            </value>
+            <value>
+                <fullName>Finance Investigation Unit (Police)</fullName>
+                <default>false</default>
+                <label>Finance Investigation Unit (Police)</label>
+            </value>
+            <value>
+                <fullName>Financial Markets Authority</fullName>
+                <default>false</default>
+                <label>Financial Markets Authority</label>
+            </value>
+            <value>
+                <fullName>First Deposit Held</fullName>
+                <default>false</default>
+                <label>First Deposit Held</label>
+            </value>
+            <value>
+                <fullName>ForsythBarr</fullName>
+                <default>false</default>
+                <label>ForsythBarr</label>
+            </value>
+            <value>
+                <fullName>Freeze Customer Account</fullName>
+                <default>false</default>
+                <label>Freeze Customer Account</label>
+            </value>
+            <value>
+                <fullName>Funds Haven&apos;t Arrived in Customer&apos;s Account</fullName>
+                <default>false</default>
+                <label>Funds Haven&apos;t Arrived in Customer&apos;s Account</label>
+            </value>
+            <value>
+                <fullName>Goals Achievement</fullName>
+                <default>false</default>
+                <label>Goals Achievement</label>
+            </value>
+            <value>
+                <fullName>IRD Number</fullName>
+                <default>false</default>
+                <label>IRD Number</label>
+            </value>
+            <value>
+                <fullName>Manual Opt out of Trove</fullName>
+                <default>false</default>
+                <label>Manual Opt out of Trove</label>
+            </value>
+            <value>
+                <fullName>Manual Verification of Customer&apos;s Email</fullName>
+                <default>false</default>
+                <label>Manual Verification of Customer&apos;s Email</label>
+            </value>
+            <value>
+                <fullName>Deposits totalling $100k or more/26 weeks</fullName>
+                <default>false</default>
+                <label>Deposits totalling $100k or more/26 weeks</label>
+            </value>
+            <value>
+                <fullName>Name</fullName>
+                <default>false</default>
+                <label>Name</label>
+            </value>
+            <value>
+                <fullName>Not a Bank Statement</fullName>
+                <default>false</default>
+                <label>Not a Bank Statement</label>
+            </value>
+            <value>
+                <fullName>Not a Statement of The Registered Bank Account</fullName>
+                <default>false</default>
+                <label>Not a Statement of The Registered Bank Account</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of Date Bank Statement</fullName>
+                <default>false</default>
+                <label>Out of Date Bank Statement</label>
+            </value>
+            <value>
+                <fullName>PEP Match</fullName>
+                <default>false</default>
+                <label>PEP Match</label>
+            </value>
+            <value>
+                <fullName>PIR</fullName>
+                <default>false</default>
+                <label>PIR</label>
+            </value>
+            <value>
+                <fullName>Registered Address</fullName>
+                <default>false</default>
+                <label>Registered Address</label>
+            </value>
+            <value>
+                <fullName>Reserve Bank</fullName>
+                <default>false</default>
+                <label>Reserve Bank</label>
+            </value>
+            <value>
+                <fullName>Salary</fullName>
+                <default>false</default>
+                <label>Salary</label>
+            </value>
+            <value>
+                <fullName>Single withdrawal of $100k or more</fullName>
+                <default>false</default>
+                <label>Single withdrawal of $100k or more</label>
+            </value>
+            <value>
+                <fullName>Tax Residency in Another Country</fullName>
+                <default>false</default>
+                <label>Tax Residency in Another Country</label>
+            </value>
+            <value>
+                <fullName>Threshold not met - manual intervention required</fullName>
+                <default>false</default>
+                <label>Threshold not met - manual intervention required</label>
+            </value>
+            <value>
+                <fullName>Total Deposits Over 3 Months is Greater Then Annual Income Divided by 4</fullName>
+                <default>false</default>
+                <label>Total Deposits Over 3 Months is Greater Then Annual Income Divided by 4</label>
+            </value>
+            <value>
+                <fullName>Trove Conduct</fullName>
+                <default>false</default>
+                <label>Trove Conduct</label>
+            </value>
+            <value>
+                <fullName>Verification Code Email not Received</fullName>
+                <default>false</default>
+                <label>Verification Code Email not Received</label>
+            </value>
+            <value>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+                <label>Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Withdrawal - greater than $10K</fullName>
+                <default>false</default>
+                <label>Withdrawal - greater than $10K</label>
+            </value>
+            <value>
+                <fullName>ANZ provided data-name mismatch</fullName>
+                <default>false</default>
+                <label>ANZ provided data-name mismatch</label>
+            </value>
+            <value>
+                <fullName>Deceased Customer</fullName>
+                <default>false</default>
+                <label>Deceased Customer</label>
+            </value>
+            <value>
+                <fullName>Deceased Customer with less than $15,000</fullName>
+                <default>false</default>
+                <label>Deceased Customer with less than $15,000</label>
+            </value>
+            <value>
+                <fullName>Deceased Customer with over $15,000</fullName>
+                <default>false</default>
+                <label>Deceased Customer with over $15,000</label>
+            </value>
+            <value>
+                <fullName>Technical errors</fullName>
+                <default>false</default>
+                <label>Technical errors</label>
+            </value>
+            <value>
+                <fullName>Tax</fullName>
+                <default>false</default>
+                <label>Tax</label>
+            </value>
+            <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
+                <fullName>Funds</fullName>
+                <default>false</default>
+                <label>Funds</label>
+            </value>
+            <value>
+                <fullName>Packs</fullName>
+                <default>false</default>
+                <label>Packs</label>
+            </value>
+            <value>
+                <fullName>Investing Information (not advice)</fullName>
+                <default>false</default>
+                <label>Investing Information (not advice)</label>
+            </value>
+            <value>
+                <fullName>Account Closure</fullName>
+                <default>false</default>
+                <label>Account Closure</label>
+            </value>
+            <value>
+                <fullName>Withdrawals totalling $100K or more/26 weeks</fullName>
+                <default>false</default>
+                <label>Withdrawals totalling $100K or more/26 weeks</label>
+            </value>
+            <value>
+                <fullName>Deposit - greater than $10K</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deposit - greater than $10K</label>
+            </value>
+            <value>
+                <fullName>Deposit to be returned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deposit to be returned</label>
+            </value>
+            <value>
+                <fullName>Multiple deposit totalling $100k or more/6 Weeks</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Multiple deposit totalling $100k or more/6 Weeks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

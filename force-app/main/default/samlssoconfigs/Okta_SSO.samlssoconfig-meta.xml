@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>exk5ipjsmgXQKxxDN697</issuer>
+    <loginUrl>https://trovenz.okta.com/app/salesforce/exk5ipjsmgXQKxxDN697/sso/saml</loginUrl>
+    <logoutUrl>https://trovenz.okta.com</logoutUrl>
+    <name>Okta SSO</name>
+    <oauthTokenEndpoint>https://trovemoney.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P19e00000001pa</requestSigningCertId>
+    <salesforceLoginUrl>https://trovemoney.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://trovemoney.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDnjCCAoagAwIBAgIGAYgscU/jMA0GCSqGSIb3DQEBCwUAMIGPMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxEDAOBgNVBAMMB3Ryb3ZlbnoxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wHhcNMjMwNTE4MDExOTAzWhcNMzMwNTE4MDEyMDAzWjCBjzELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTALBgNVBAoMBE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRAwDgYDVQQDDAd0cm92ZW56MRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv8qe7TwYr1XMjNA2vMrhF7rH9gzBcSCqQji5TsIj5rKjBhLZl3hQ8MHvvHWq+rhInFyI9cIz6yKvzaimbqqklKEqEByHSI+yV9Ydr35+1N0nBBAfwxhzqFvKBrSLvCUAR2RP8wSi7JV2YYUeW8bCInQ+ip16cza9u/iKRPFK72U5ycMwSrGFkJFzTXlZUR14z2qxTz0ba+zzmuLEtWzUAo9j7mSd7+JXyuN1kFJxODS2I6YmdSR96vLGlqxv2qAZBhPX1cvsWE6xFhOU0PBJSRZrs21JTCLDTnROSH5wJpR1EnW359hwIyaLxvoCAYGS9TNFgF7A//VvJCEVoKOihQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCX0Tl6ip1vySDDRpU4+DoBcUuUiPlcnGNyKWs8PwXWFGvDb8uV9ERr66sRONDtc8o6fU7AOB9xnMuverf6ZdtBIeAQx7AQ4PWB0SyFzCGCPHO9fedho9iyXu6Le6PRGbIVpVL+GiA5wecojT72SwbbCXtyF2K5Zk7W+qq2J65f+4A412hg3qxqXp516gKZIjusTFiqBOoHAwRrYpP9zuUjueyYRRreU2DjUvUcl0X3Uo0VUykYvDkxYj37WY/VJ+t9u3pigujXODDY/z2hfwNdz5/duWdicI4s459pUg8s2UNdJ6oKtmjmTF++Ogb/EOQbxN40aovxqTTkiFJK2Ajy</validationCert>
+</SamlSsoConfig>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Status of goals.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Goals become active when the first deposit has been processed for the goal. Withdrawals are disabled if a goal is locked.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Created</fullName>
+                <default>false</default>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>active</label>
+            </value>
+            <value>
+                <fullName>Locked</fullName>
+                <default>false</default>
+                <label>locked</label>
+            </value>
+            <value>
+                <fullName>Unlocked</fullName>
+                <default>false</default>
+                <label>Unlocked</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

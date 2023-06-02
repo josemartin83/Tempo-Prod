@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send email notification to the community case team.</description>
+        <name>Community_Email_Alert</name>
+        <label>Community Email Alert</label>
+        <locationX>814</locationX>
+        <locationY>296</locationY>
+        <actionName>Case.FB_Compliance_Email_Alerts</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Query_Case_Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <description>Assign case teams to case automatically.</description>
+    <interviewLabel>Case Team Assignment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Team Assignment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Add_Case_Team</name>
+        <label>Add Case Team</label>
+        <locationX>603</locationX>
+        <locationY>291</locationY>
+        <connector>
+            <targetReference>Community_Email_Alert</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Query_Case_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TeamTemplateId</field>
+            <value>
+                <elementReference>Query_Predefined_Case_Teams.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CaseTeamTemplateRecord</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Query case records to trigger case team assignment.</description>
+        <name>Query_Case_Record</name>
+        <label>Query Case Record</label>
+        <locationX>469</locationX>
+        <locationY>112</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Query_Predefined_Case_Teams</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Team_Assignment__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Query predefined case teams</description>
+        <name>Query_Predefined_Case_Teams</name>
+        <label>Query Predefined Case Teams</label>
+        <locationX>462</locationX>
+        <locationY>286</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_Case_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <elementReference>Query_Case_Record.Team_Assignment__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CaseTeamTemplate</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Query_Case_Record</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>O5</label>
+    <protected>false</protected>
+    <values>
+        <field>AML_Decision_Flag__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Area__c</field>
+        <value xsi:type="xsd:string">Onboarding</value>
+    </values>
+    <values>
+        <field>Case_Conclusion__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Case_Owner_Id__c</field>
+        <value xsi:type="xsd:string">Customer_Support</value>
+    </values>
+    <values>
+        <field>Case_Reason__c</field>
+        <value xsi:type="xsd:string">No Driver’s License or Passport</value>
+    </values>
+    <values>
+        <field>Case_Record_Type__c</field>
+        <value xsi:type="xsd:string">Compliance</value>
+    </values>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Cloudcheck</value>
+    </values>
+    <values>
+        <field>Channel__c</field>
+        <value xsi:type="xsd:string">System</value>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">This is an auto case that’s been raised to verify the customer’s identity as they have selected that they don’t have a driver’s license or passport during the onboarding process. The email template “Verifying identity and address together” has been sent to the customer. Once the customer has responded, please verify that the ID and address documentation that they have provided is valid and satisfies our ID and address verification requirements.
+
+NOTE: A manual PEP check is required once the name, date of birth and address have been verified - Please run a PEP Cloudcheck report to confirm that the Watchlist check has been completed.</value>
+    </values>
+    <values>
+        <field>Escalated_to_FB__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>First_Deposit_Held__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Locked__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Priority__c</field>
+        <value xsi:type="xsd:string">Low</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">On Hold</value>
+    </values>
+    <values>
+        <field>Sub_Category__c</field>
+        <value xsi:type="xsd:string">Threshold not met - manual intervention required</value>
+    </values>
+    <values>
+        <field>Subject__c</field>
+        <value xsi:type="xsd:string">No Driver’s License or Passport Verification Request</value>
+    </values>
+    <values>
+        <field>Team_Assignment__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>
